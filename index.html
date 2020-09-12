@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pleasant Tour</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/css01.css" rel="stylesheet">
+    <link href="css/bootstrap-social.css" rel="stylesheet">
+    <link href="css/css/all.css" rel="stylesheet">
+<!--    favicon-->
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+<!--favicon end-->
+</head>
+<body>
+<div class="container-fluid" id="container">
+    <!--            header start-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light border-0 sticky-top">
+        <a class="navbar-brand" href="index.html"><img id="logo" alt="Logo" class="w-100" src="img/logo.png"></a>
+        <button aria-controls="topnavbar" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"
+                data-target="#topnavbar" data-toggle="collapse" type="button">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="topnavbar">
+            <ul class="navbar-nav border-left mr-auto pl-5">
+                <li class="nav-item  ml-md-5 active">
+                    <a class="nav-link text-uppercase" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item  ml-md-5">
+                    <a class="nav-link text-uppercase" href="domestic.html"> Domestic</a>
+                </li>
+                <li class="nav-item  ml-md-5">
+                    <a class="nav-link text-uppercase" href="international.html">International</a>
+                </li>
+                <li class="nav-item  ml-md-5">
+                    <a class="nav-link text-uppercase" href="onsale.html">Sales</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0" name="searcher" action="#popular" onsubmit="return searchform()">
+                <input aria-label="Search" class="form-control mr-sm-2" name="topsearch" placeholder="Search"
+                       type="search">
+                <button class="btn btn-outline-primary my-2 my-sm-0 " type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+    </nav>
+    <!--            header end-->
+    <!--            slider area start-->
+    <div class="carousel slide carousel-fade" data-ride="carousel" id="topslide">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img alt="1" class="d-block w-100" src="img/top-slides/banner.png">
+            </div>
+            <div class="carousel-item">
+                <img alt="2" class="d-block w-100" src="img/top-slides/banner2.png">
+            </div>
+            <div class="carousel-item">
+                <img alt="3" class="d-block w-100" src="img/top-slides/banner3.png">
+            </div>
+        </div>
+        <a class="carousel-control-prev" data-slide="prev" href="#topslide" role="button">
+            <span aria-hidden="true" class="carousel-control-prev-icon"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" data-slide="next" href="#topslide" role="button">
+            <span aria-hidden="true" class="carousel-control-next-icon"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <!--    slider area end-->
+    <!--    bread crumb start-->
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb bg-white">
+            <li aria-current="page" class="breadcrumb-item active">Home</li>
+        </ol>
+    </nav>
+    <!--    bread crumb end-->
+    <!--    body start-->
+    <!--Popular Destination area start-->
+    <div id="popular" class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-6">
+                <div class="section_title text-center mb_70">
+                    <h3>Popular Destination</h3>
+                    <p>Suffered alteration in some form, by injected humour or good day randomised booth anim 8-bit
+                        hella wolf moon beard words.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mt-4">
+                <a class="card" href="france.html">
+                    <img class="card-img" src="img/destination/1.png">
+                    <div class="img-caption">
+                       <h3 class="card-title text-white">France</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-md-6 mt-4">
+                <a class="card" href="brazil.html">
+                    <img class="card-img" src="img/destination/2.png">
+                    <div class="img-caption">
+                        <h3 class="card-title text-white">Brazil</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-md-6 mt-4">
+                <a class="card" href="america.html">
+                    <img class="card-img" src="img/destination/3.png">
+                    <div class="img-caption">
+                        <h3 class="card-title text-white">America</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-md-6 mt-4">
+                <a class="card" href="nepal.html">
+                    <img class="card-img" src="img/destination/4.png">
+                    <div class="img-caption">
+                        <h3 class="card-title text-white">Nepal</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-md-6 mt-4">
+                <a class="card" href="madives.html">
+                    <img class="card-img" src="img/destination/5.png">
+                    <div class="img-caption">
+                        <h3 class="card-title text-white">Madives</h3>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4 col-md-6 mt-4">
+                <a class="card" href="indonesia.html">
+                    <img class="card-img" src="img/destination/6.png">
+                    <div class="img-caption">
+                        <h3 class="card-title text-white">Indonesia</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--Popular Destination area end-->
+    <!--newsleter area start-->
+    <div class="newletter_area overlay mt-5">
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-lg-10">
+                    <div class="row align-items-center">
+                        <div class="col-lg-5">
+                            <div class="newsletter_text">
+                                <h4>Subscribe Our Newsletter</h4>
+                                <p>Subscribe newsletter to get offers and about
+                                    new places to discover.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="mail_form">
+                                <form name="newsletter" onsubmit="return newsletterform()" method="post" class="row no-gutters">
+                                    <div class="col-lg-9 col-md-8">
+                                        <div class="newsletter_field">
+                                            <input placeholder="Your email" type="email" name="fmail">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 col-md-4">
+                                        <div class="newsletter_btn">
+                                            <button class="boxed-btn4 " type="submit">Subscribe</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--newsleter area end-->
+    <!--Popular Places area start-->
+    <div class="popular_places_area mt-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="section_title text-center mb-5">
+                        <h3>Popular Places</h3>
+                        <p>Suffered alteration in some form, by injected humour or good day randomised booth anim 8-bit
+                            hella wolf moon beard words.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="single_place">
+                        <div class="thumb">
+                            <img alt="" src="img/place/1.png">
+                            <a class="prise" href="#">$500</a>
+                        </div>
+                        <div class="place_info">
+                            <a href="california.html"><h3>California</h3></a>
+                            <p>United State of America</p>
+                            <div class="rating_days d-flex justify-content-between">
+                                <span class="d-flex justify-content-center align-items-center text-warning">
+                                     <i class="fa fa-star"></i>
+                                     <i class="fa fa-star"></i>
+                                     <i class="fa fa-star"></i>
+                                     <i class="fa fa-star"></i>
+                                     <i class="fa fa-star"></i>
+                                     <a href="#">(20 Review)</a>
+                                </span>
+                                <div class="days">
+                                    <i class="fa fa-history"></i>
+                                    <a href="#">5 Days</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single_place">
+                        <div class="thumb">
+                            <img alt="" src="img/place/2.png">
+                            <a class="prise" href="#">$500</a>
+                        </div>
+                        <div class="place_info">
+                            <a href="hawaii.html"><h3>Hawaii</h3></a>
+                            <p>United State of America</p>
+                            <div class="rating_days d-flex justify-content-between">
+                                <span class="d-flex justify-content-center align-items-center text-warning">
+                                     <i class="fa fa-star"></i>
+                                     <i class="fa fa-star"></i>
+                                     <i class="fa fa-star"></i>
+                                     <i class="fa fa-star"></i>
+                                     <i class="fa fa-star"></i>
+                                     <a href="#">(20 Review)</a>
+                                </span>
+                                <div class="days">
+                                    <i class="fa fa-history"></i>
+                                    <a href="#">5 Days</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single_place">
+                        <div class="thumb">
+                            <img alt="" src="img/place/3.png">
+                            <a class="prise" href="#">$500</a>
+                        </div>
+                        <div class="place_info">
+                            <a href="london.html"><h3>London</h3></a>
+                            <p> United Kingdom of England</p>
+                            <div class="rating_days d-flex justify-content-between">
+                                <span class="d-flex justify-content-center align-items-center text-warning">
+                                     <i class="fa fa-star"></i>
+                                     <i class="fa fa-star"></i>
+                                     <i class="fa fa-star"></i>
+                                     <i class="fa fa-star"></i>
+                                     <i class="fa fa-star"></i>
+                                     <a href="#">(20 Review)</a>
+                                </span>
+                                <div class="days">
+                                    <i class="fa fa-history"></i>
+                                    <a href="#">5 Days</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single_place">
+                        <div class="thumb">
+                            <img alt="" src="img/place/4.png">
+                            <a class="prise" href="#">$500</a>
+                        </div>
+                        <div class="place_info">
+                            <a href="miami.html"><h3>Miami Beach</h3></a>
+                            <p>United State of America</p>
+                            <div class="rating_days d-flex justify-content-between">
+                                <span class="d-flex justify-content-center align-items-center text-warning">
+                                     <i class="fa fa-star"></i>
+                                     <i class="fa fa-star"></i>
+                                     <i class="fa fa-star"></i>
+                                     <i class="fa fa-star"></i>
+                                     <i class="fa fa-star"></i>
+                                     <a href="#">(20 Review)</a>
+                                </span>
+                                <div class="days">
+                                    <i class="fa fa-history"></i>
+                                    <a href="#">5 Days</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single_place">
+                        <div class="thumb">
+                            <img alt="" src="img/place/5.png">
+                            <a class="prise" href="#">$500</a>
+                        </div>
+                        <div class="place_info">
+                            <a href="lauderdale.html"><h3>Fort Lauderdale</h3></a>
+                            <p>United State of America</p>
+                            <div class="rating_days d-flex justify-content-between">
+                                <span class="d-flex justify-content-center align-items-center text-warning">
+                                     <i class="fa fa-star"></i>
+                                     <i class="fa fa-star"></i>
+                                     <i class="fa fa-star"></i>
+                                     <i class="fa fa-star"></i>
+                                     <i class="fa fa-star"></i>
+                                     <a href="#">(20 Review)</a>
+                                </span>
+                                <div class="days">
+                                    <i class="fa fa-history"></i>
+                                    <a href="#">5 Days</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single_place">
+                        <div class="thumb">
+                            <img alt="" src="img/place/6.png">
+                            <a class="prise" href="#">$500</a>
+                        </div>
+                        <div class="place_info">
+                            <a href="saintmartine.html"><h3>Saintmartine Iceland</h3></a>
+                            <p>United State of America</p>
+                            <div class="rating_days d-flex justify-content-between">
+                                <span class="d-flex justify-content-center align-items-center text-warning">
+                                     <i class="fa fa-star"></i>
+                                     <i class="fa fa-star"></i>
+                                     <i class="fa fa-star"></i>
+                                     <i class="fa fa-star"></i>
+                                     <i class="fa fa-star"></i>
+                                     <a href="#">(20 Review)</a>
+                                </span>
+                                <div class="days">
+                                    <i class="fa fa-history"></i>
+                                    <a href="#">5 Days</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="more_place_btn text-center">
+                        <a class="boxed-btn4" href="#">More Places</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Popular Places area end-->
+    <!--body end-->
+    <!--footer start-->
+    <div class="container-fluid bg-light">
+        <div class="row mt-4">
+            <div class="col-md-4">
+                <h5>Contact us</h5>
+                <address><i class="fa fa-location-arrow"></i><strong> Address:</strong><a
+                        href="https://goo.gl/maps/Xp4WUCWbacVFvFdq9"> Praesent commodo cursus magna, vel
+                    scelerisque nisl consectetur.</a></address>
+                <address><i class="fa fa-phone"></i><strong> Phone:</strong><a href="tel:123-456-7890">
+                    123-456-7890</a></address>
+                <address><i class="fa fa-mail-bulk"></i><strong> Email:</strong><a
+                        href="mailto:pleasanttour@gmail.com"> pleasanttour@gmail.com</a></address>
+                <address><i class="fa fa-globe-africa"></i><strong> Web Site:</strong><a
+                        href="http://pleasantour.com"> pleasantour.com</a></address>
+            </div>
+            <div class="col-md-4 ">
+                <h5>Follow us on:</h5>
+                <a class="text-primary" href="http://facebook.com"><i class="fa-2x fab fa-facebook-square"></i></a>
+                <a class="text-info" href="http://twiter.com"><i class="fa-2x fab fa-twitter-square"></i></a>
+                <a class="text-dark" href="http://instagram.com"><i
+                        class="fa-2x fab fa-instagram-square"></i></a>
+                <a class="text-danger" href="http://https://www.pinterest.com/"><i
+                        class="fa-2x fab fa-pinterest"></i></a>
+                <a class="text-danger" href="http://youtube.com"><i class="fa-2x fab fa-youtube-square"></i></a>
+                <h5>About us</h5>
+                <p>Pleasant Tour, a world leader in the vacation rental industry, is the place to book beach houses,
+                    cabins and condos with more than two million places to stay in 190 countries. The site makes it easy
+                    to find and book the perfect vacation rental for any getaway, often for less than the cost of
+                    traditional hotel accommodations.</p>
+            </div>
+            <div class="col-md-4">
+                <iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12716.134309369154!2d-7.499474!3d37.175673!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd10191245a42921%3A0xcbb36bf7e6cd9993!2zUi4gZGEgQWxhZ29hIDc3LCA4OTUwLTQxMSBBbHR1cmEsIELhu5MgxJDDoG8gTmhh!5e0!3m2!1svi!2s!4v1599913960623!5m2!1svi!2s" width="600" height="280" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>            </div>
+        </div>
+    </div>
+    <!--footer end-->
+</div>
+<footer class="footer mt-auto py-3">
+    <div class="container-fluid bg-light">
+        <span class="text-muted">&copy 2020 Design by PleasantTour Teams All Rights Reserved</span>
+    </div>
+</footer>
+<!--js here-->
+<script src="js/jquery-3.5.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="css/js/all.min.js"></script>
+<script src="js/newletter-searchform-checker.js"></script>
+<script src="js/js01.js"></script>
+</body>
+
+</html>
