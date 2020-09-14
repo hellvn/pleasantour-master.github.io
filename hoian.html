@@ -28,8 +28,7 @@
     <!--favicon end-->
 </head>
 <body>
-
-<div class="container-fluid">
+<div class="container-fluid" id="container">
     <!--            header start-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light border-0 sticky-top">
         <a class="navbar-brand" href="index.html"><img id="logo" alt="Logo" class="w-100" src="img/logo.png"></a>
@@ -40,11 +39,11 @@
 
         <div class="collapse navbar-collapse" id="topnavbar">
             <ul class="navbar-nav border-left mr-auto pl-5">
-                <li class="nav-item  ml-md-5 active">
-                    <a class="nav-link text-uppercase" href="index.html">Home <span class="sr-only">(current)</span></a>
-                </li>
                 <li class="nav-item  ml-md-5">
-                    <a class="nav-link text-uppercase" href="domestic.html"> Domestic</a>
+                    <a class="nav-link text-uppercase" href="index.html">Home</a>
+                </li>
+                <li class="nav-item  ml-md-5 active">
+                    <a class="nav-link text-uppercase" href="domestic.html">Domestic <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item  ml-md-5">
                     <a class="nav-link text-uppercase" href="international.html">International</a>
@@ -84,90 +83,195 @@
         </a>
     </div>
     <!--    slider area end-->
-    <!--    BREAD CRUMB-->
+    <!--    bread crumb start-->
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb bg-white">
             <li class="breadcrumb-item"><a href="index.html">Home</a></li>
             <li class="breadcrumb-item"><a href="domestic.html">Domestic</a></li>
             <li class="breadcrumb-item active" aria-current="page">Hoi An</li>
+
         </ol>
     </nav>
-    <!--            BODY-->
-    <div class="row">
-        <div class="col-md-12">
-            <div aria-labelledby="page1-tab" class="tab-pane fade show active" id="page1" role="tabpanel">
-                <ul class="list-unstyled">
-                    <li class="media border border-secondary mt-5">
-                        <a href="tour/tour-hoian/HoianAnceintTown.html">
-                            <img alt="Generic placeholder image" class="mr-3 review" src="img/domestic/hoian/profile%20tour/ha-profile.1.1.jpg">
-                        </a>
-                        <div class="media-body">
-                            <h5 class="mt-0 mb-1">Hoi An Ancient Town</h5>
-                            This city on the central Vietnamese coast is a well-preserved example
-                            of the important Southeast Asian trading port it was from the 15th-19th centuries.
-                            Already a common stop for backpackers, it is becoming better known to tourists.
-                            On the 14th day of each lunar month, the town trades its electric lights for traditional colored lanterns. Sights include the Japanese Covered Bridge and the Quan Cong Temple.
-                            Let the town’s expert tailors make you some bespoke clothing.
+    <!--    bread crumb end-->
+    <!--    body start-->
+    <div class="popular_places_area mt-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <div class="section_title text-center mb-5">
+                        <h3>Trips in Hoi An</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="single_place">
+                        <div class="thumb">
+                            <img alt="" src="img/domestic/dalat/private-langbiang/03.jpg">
+                            <a class="prise" href="tour/tour-dalat/private-langbiang.html">$500</a>
                         </div>
-
-                    </li>
-                    <li class="media border border-secondary mt-5">
-                        <a href="tour/tour-hoian/HaFoodTour.html">
-                            <img alt="Generic placeholder image" class="mr-3 review" src="img/domestic/hoian/profile%20tour/ha-profile.2.1.jpg">
-                        </a>
-                        <div class="media-body">
-                            <h5 class="mt-0 mb-1">Evening Food Tour</h5>
-                            Explore Hoi An when temperatures have cooled and crowds have somewhat dispersed on a tour
-                            that offers an inside glimpse into the city’s street food scene.
-                            Ideal for first-time visitors and food lovers, this tour takes you off the beaten path
-                            and reveals easy-to-miss eateries that only locals know of.
+                        <div class="place_info">
+                            <a href="tour/tour-dalat/private-langbiang.html"><h3>Private Langbiang</h3></a>
+                            <p>Lam Dong - Viet Nam</p>
+                            <div class="rating_days d-flex justify-content-between">
+                                <span class="d-flex justify-content-center align-items-center text-warning">
+                                     <i class="fa fa-star"></i>
+                                     <i class="fa fa-star"></i>
+                                     <i class="fa fa-star"></i>
+                                     <i class="fa fa-star"></i>
+                                     <i class="far fa-star"></i>
+                                     <a href="#">(20 Review)</a>
+                                </span>
+                                <div class="days">
+                                    <i class="fa fa-history"></i>
+                                    <a href="#">5 Days</a>
+                                </div>
+                            </div>
                         </div>
-                    </li>
-                    <li class="media border border-secondary mt-5">
-                        <a href="tour/tour-hoian/hoiAn.html"><img alt="Generic placeholder image"
-                                                                  class="mr-3 review"
-                                                                  src="img/domestic/hoian/profile%20tour/ha-profile.1.4.jpg"></a>
-                        <div class="media-body">
-                            <h5 class="mt-0 mb-1">Hoi An</h5>
-                            This city on the central Vietnamese coast is a well-preserved example of the important
-                            Southeast Asian trading port it was from the 15th-19th centuries. Already a common stop
-                            for backpackers, it is becoming better known to tourists. On the 14th day of each lunar
-                            month, the town trades its electric lights for traditional colored lanterns. Sights
-                            include the Japanese Covered Bridge and the Quan Cong Temple. Let the town’s expert
-                            tailors make you some bespoke clothing.
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single_place">
+                        <div class="thumb">
+                            <img alt="" src="img/domestic/dalat/motobike/1.jpg">
+                            <a class="prise" href="#">$500</a>
                         </div>
-                    </li>
-                </ul>
+                        <div class="place_info">
+                            <a href="tour/tour-dalat/Dalat-on-Motorbike-Tours.html"><h3>Dalat on Motorbike Tours</h3></a>
+                            <p>Lam Dong - Viet Nam</p>
+                            <div class="rating_days d-flex justify-content-between">
+                                <span class="d-flex justify-content-center align-items-center text-warning">
+                                     <i class="fa fa-star"></i>
+                                     <i class="fa fa-star"></i>
+                                     <i class="fa fa-star"></i>
+                                     <i class="fa fa-star"></i>
+                                     <i class="fa fa-star"></i>
+                                     <a href="#">(20 Review)</a>
+                                </span>
+                                <div class="days">
+                                    <i class="fa fa-history"></i>
+                                    <a href="#">5 Days</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single_place">
+                        <div class="thumb">
+                            <img alt="" src="img/place/3.png">
+                            <a class="prise" href="#">$500</a>
+                        </div>
+                        <div class="place_info">
+                            <a href="london.html"><h3>London</h3></a>
+                            <p> United Kingdom of England</p>
+                            <div class="rating_days d-flex justify-content-between">
+                                <span class="d-flex justify-content-center align-items-center text-warning">
+                                     <i class="fa fa-star"></i>
+                                     <i class="fa fa-star"></i>
+                                     <i class="fa fa-star"></i>
+                                     <i class="fa fa-star"></i>
+                                     <i class="fa fa-star"></i>
+                                     <a href="#">(20 Review)</a>
+                                </span>
+                                <div class="days">
+                                    <i class="fa fa-history"></i>
+                                    <a href="#">5 Days</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single_place">
+                        <div class="thumb">
+                            <img alt="" src="img/place/4.png">
+                            <a class="prise" href="#">$500</a>
+                        </div>
+                        <div class="place_info">
+                            <a href="miami.html"><h3>Miami Beach</h3></a>
+                            <p>United State of America</p>
+                            <div class="rating_days d-flex justify-content-between">
+                                <span class="d-flex justify-content-center align-items-center text-warning">
+                                     <i class="fa fa-star"></i>
+                                     <i class="fa fa-star"></i>
+                                     <i class="fa fa-star"></i>
+                                     <i class="fa fa-star"></i>
+                                     <i class="fa fa-star"></i>
+                                     <a href="#">(20 Review)</a>
+                                </span>
+                                <div class="days">
+                                    <i class="fa fa-history"></i>
+                                    <a href="#">5 Days</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single_place">
+                        <div class="thumb">
+                            <img alt="" src="img/place/5.png">
+                            <a class="prise" href="#">$500</a>
+                        </div>
+                        <div class="place_info">
+                            <a href="lauderdale.html"><h3>Fort Lauderdale</h3></a>
+                            <p>United State of America</p>
+                            <div class="rating_days d-flex justify-content-between">
+                                <span class="d-flex justify-content-center align-items-center text-warning">
+                                     <i class="fa fa-star"></i>
+                                     <i class="fa fa-star"></i>
+                                     <i class="fa fa-star"></i>
+                                     <i class="fa fa-star"></i>
+                                     <i class="fa fa-star"></i>
+                                     <a href="#">(20 Review)</a>
+                                </span>
+                                <div class="days">
+                                    <i class="fa fa-history"></i>
+                                    <a href="#">5 Days</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single_place">
+                        <div class="thumb">
+                            <img alt="" src="img/place/6.png">
+                            <a class="prise" href="#">$500</a>
+                        </div>
+                        <div class="place_info">
+                            <a href="saintmartine.html"><h3>Saintmartine Iceland</h3></a>
+                            <p>United State of America</p>
+                            <div class="rating_days d-flex justify-content-between">
+                                <span class="d-flex justify-content-center align-items-center text-warning">
+                                     <i class="fa fa-star"></i>
+                                     <i class="fa fa-star"></i>
+                                     <i class="fa fa-star"></i>
+                                     <i class="fa fa-star"></i>
+                                     <i class="fa fa-star"></i>
+                                     <a href="#">(20 Review)</a>
+                                </span>
+                                <div class="days">
+                                    <i class="fa fa-history"></i>
+                                    <a href="#">5 Days</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="more_place_btn text-center">
+                        <a class="boxed-btn4" href="#">More Places</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <div class="row">
-        <div class="col-md-12">
-            <nav aria-label="Page navigation example">
-                <ul class="pagination justify-content-center">
-                    <li class="page-item">
-                        <a aria-label="Previous" class="page-link" href="#myTabContent">
-                            <span aria-hidden="true">&laquo;</span>
-                        </a>
-                    </li>
-                    <li class="page-item active"><a aria-controls="page1" aria-current="page" class="page-link" data-toggle="page"
-                                                    href="#page1" role="tab">1<span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="page-item disabled"><a aria-controls="page2" class="page-link" data-toggle="page" href="#page2"
-                                                      role="tab">2</a></li>
-                    <li class="page-item disabled"><a aria-controls="page3" class="page-link" data-toggle="page" href="#page3"
-                                                      role="tab">3</a></li>
-                    <li class="page-item">
-                        <a aria-label="Next" class="page-link" href="#myTabContent">
-                            <span aria-hidden="true">&raquo;</span>
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </div>
-
-    <!--            FOOTER-->
+    <!--    body end-->
+    <!--footer start-->
     <div class="container-fluid bg-light">
         <div class="row mt-4">
             <div class="col-md-4">
