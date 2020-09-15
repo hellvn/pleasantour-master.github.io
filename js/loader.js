@@ -12,6 +12,6 @@ function contentvisibility() {
 var y = 10;
 document.getElementById('time').innerHTML = y;
 function stime(){document.getElementById('time').innerHTML = y;    y = y - 1;
-    if(y == 0){clearInterval(timing); location.replace('../index.html')}
+    if(y == 0){clearInterval(timing); location.replace('../../index.html')}
 }
 var timing = setInterval("stime();",1000);

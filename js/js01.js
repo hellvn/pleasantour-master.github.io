@@ -1,5 +1,5 @@
 function booked(){
-    location.replace("../../paymentsuccess.html")
+    location.replace("../../payment.html")
 }
 // readmore script
 $(document).ready(function(){
