@@ -40,8 +40,8 @@
 
         <div class="collapse navbar-collapse" id="topnavbar">
             <ul class="navbar-nav border-left mr-auto pl-5">
-                <li class="nav-item  ml-md-5 active">
-                    <a class="nav-link text-uppercase" href="index.html">Home <span class="sr-only">(current)</span></a>
+                <li class="nav-item  ml-md-5">
+                    <a class="nav-link text-uppercase" href="index.html">Home</a>
                 </li>
                 <li class="nav-item  ml-md-5">
                     <a class="nav-link text-uppercase" href="domestic.html">Domestic</a>
@@ -49,8 +49,8 @@
                 <li class="nav-item  ml-md-5">
                     <a class="nav-link text-uppercase" href="international.html">International</a>
                 </li>
-                <li class="nav-item  ml-md-5">
-                    <a class="nav-link text-uppercase" href="onsale.html">Sales</a>
+                <li class="nav-item  ml-md-5 active">
+                    <a class="nav-link text-uppercase" href="onsale.html">Sales <span class="sr-only">(current)</span></a>
                 </li>
             </ul>
             <form class="form-inline my-2 my-lg-0" name="searcher" action="#popular" onsubmit="return searchform()">
@@ -87,7 +87,8 @@
     <!--    bread crumb start-->
     <nav aria-label="breadcrumb">
         <ol class="breadcrumb bg-white">
-            <li aria-current="page" class="breadcrumb-item active">Home</li>
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li aria-current="page" class="breadcrumb-item active">Sales</li>
         </ol>
     </nav>
     <!--    bread crumb end-->
