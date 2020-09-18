@@ -1,5 +1,6 @@
 
 .footer{
+    background-color: #f8f9fa;
     background-image: url("../img/bg.png");
 }
 .carousel-thumbnails{
@@ -403,4 +404,8 @@
 }
 .fa-youtube:hover{
     color: #a32b1c;
+}
+.card-title{
+    font-family: "Nothing You Could Do", cursive;
+    font-style: italic;
 }
