@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pleasant Tour</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/css01.css" rel="stylesheet">
+    <link href="css/bootstrap-social.css" rel="stylesheet">
+    <link href="css/css/all.css" rel="stylesheet">
+    <!--favicon-->
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <!--favicon end-->
+</head>
+<body>
+<div id="container" class="container-fluid">
+    <!--            header start-->
+    <nav class="navbar navbar-expand navbar-light bg-light sticky-top">
+        <a class="navbar-brand" href="index.html"><img id="logo" alt="Logo" class="w-100" src="img/logo.png"></a>
+        <button aria-controls="topnavbar" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"
+                data-target="#topnavbar" data-toggle="collapse" type="button">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="topnavbar">
+            <ul class="navbar-nav border-left mr-auto pl-md-5 pl-sm-0">
+                <li class="nav-item ml-lg-5 ml-sm-2">
+                    <a class="nav-link text-uppercase" href="index.html">Home</a>
+                </li>
+                <li class="nav-item  ml-lg-5 ml-sm-2">
+                    <a class="nav-link text-uppercase" href="domestic.html">Domestic</a>
+                </li>
+                <li class="nav-item  ml-lg-5 ml-sm-2">
+                    <a class="nav-link text-uppercase" href="international.html">International</a>
+                </li>
+                <li class="nav-item  ml-lg-5 ml-sm-2">
+                    <a class="nav-link text-uppercase" href="onsale.html">Sales</a>
+                </li>
+            </ul>
+            <form class="form-inline mt-3 my-lg-0" name="searcher" action="#" onsubmit="return searchform()">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Search" aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-primary" type="button" id="button-addon2"><i class="fa fa-search"></i></button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </nav>
+    <!--            header end-->
+    <!--    bread crumb start-->
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb bg-white">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li aria-current="page" class="breadcrumb-item active">Select Dates And Travelers</li>
+        </ol>
+    </nav>
+    <!--    bread crumb end-->
+    <!--    body start-->
+    <!--    Set Tour Start-->
+    <div class="row">
+        <div class="col-2">
+            <p>Check In</p>
+            <input type="date">
+        </div>
+        <div class="col-2">
+            <p>Check Out</p>
+            <input type="date">
+        </div>
+        <div class="col-2">
+            <label for="validationCustom04">Adults</label>
+            <select class="custom-select" id="" required>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+                <option>13</option>
+                <option>14</option>
+                <option>15</option>
+                <option>16</option>
+                <option>17</option>
+                <option>18</option>
+                <option>19</option>
+                <option>20</option>
+            </select>
+        </div>
+        <div class="col-2">
+            <label for="validationCustom04">Children</label>
+            <select class="custom-select" id="" required>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+                <option>13</option>
+                <option>14</option>
+                <option>15</option>
+                <option>16</option>
+                <option>17</option>
+                <option>18</option>
+                <option>19</option>
+                <option>20</option>
+            </select>
+        </div>
+        <div class="col-2">
+            <label for="validationCustom04">Infant</label>
+            <select class="custom-select" id="" required>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+                <option>13</option>
+                <option>14</option>
+                <option>15</option>
+                <option>16</option>
+                <option>17</option>
+                <option>18</option>
+                <option>19</option>
+                <option>20</option>
+            </select>
+        </div>
+        <div class="col-2">
+            <label for="validationCustom04">Transport</label>
+            <select class="custom-select" id="" required>
+                <option>By Car</option>
+                <option>By Plane</option>
+                <option>By Train</option>
+                <option>By Ship</option>
+            </select>
+        </div>
+    </div>
+    <!--    Set Tour End-->
+    <div class="row">
+    <!--   Set Lead Traveler start -->
+    <div class="col-8">
+        <div class="row mt-3">
+            <form class="col-6">
+                <h4>Lead Traveler(Adult)</h4>
+                <p>! We need Information of lead traveler to contact and deposit</p>
+                <div class="form-row">
+                    <div class="col">
+                        <h6>First Name</h6>
+                        <input type="text" class="form-control" placeholder="John ">
+                    </div>
+                    <div class="col">
+                        <h6>Last Name</h6>
+                        <input type="text" class="form-control" placeholder="M. Doe">
+                    </div>
+                    <div class="col-2">
+                        <h6>Age</h6>
+                        <input type="text" class="form-control" placeholder="age">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="row mt-3">
+            <form class="col-6">
+                <div class="form-row">
+                    <div class="col">
+                        <h6>Email</h6>
+                        <input type="text" class="form-control" placeholder="john@example.com">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="row mt-3">
+            <form class="col-6">
+                <div class="form-row">
+                    <div class="col">
+                        <h6>Phone Number</h6>
+                        <input type="text" class="form-control" placeholder="123-456-789">
+                    </div>
+                    <div class="col">
+                        <h6>Address</h6>
+                        <input type="text" class="form-control" placeholder="542 W. 15th Street">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="row mt-3">
+            <form class="col-6">
+                <div class="form-row">
+                    <div class="col-6">
+                        <h6>Credit Card Number</h6>
+                        <input type="text" class="form-control" placeholder="111-222-333-444-555">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="justify-content-center mt-4">
+        <a class="btn btn-bitbucket " type="submit" href="dalat.html">Send</a>
+        </div>
+    </div>
+    <!--   Set Lead Traveler end -->
+    <div class="col-4 mt-2 border">
+        hahahah
+
+    </div>
+    </div>
+    <!--    body end-->
+    <!--    back to top btn-->
+    <button class="totop btn btn-outline-primary" id="backtotop" onclick="backtop()"><i class="fa-2x fas fa-arrow-circle-up"></i></button>
+    <!--    back to top btn end-->
+    <!--footer start-->
+    <div class="container-fluid footer mt-5">
+        <div class="container pt-5">
+            <div class="row">
+                <div class="col-md-4">
+                    <p class="text-uppercase font-weight-bold">directory</p>
+                    <p class="text-muted">Follow us to gets special offers and discounts</p>
+                    <a class="text-muted" href="http://facebook.com"><i class="fa-2x fab fa-facebook"></i></a>
+                    <a class="text-muted pl-2" href="http://twiter.com"><i class="fa-2x fab fa-twitter"></i></a>
+                    <a class="text-muted pl-2" href="http://instagram.com"><i class="fa-2x fab fa-instagram"></i></a>
+                    <a class="text-muted pl-2" href="http://https://www.pinterest.com/"><i
+                            class="fa-2x fab fa-pinterest"></i></a>
+                    <a class="text-muted pl-2" href="http://youtube.com"><i class="fa-2x fab fa-youtube"></i></a>
+                </div>
+                <div class="col-md-4 font-weight-bold">
+                    <p class="text-uppercase">pages</p>
+                    <a href="contact.html"><p class="text-muted">Comparison</p></a>
+                    <a href="contact.html"><p class="text-muted">Our Team</p></a>
+                    <a href="contact.html"><p class="text-muted">Contact</p></a>
+                </div>
+                <div class="col-md-4">
+                    <p class="text-uppercase font-weight-bold">daily offers & discounts</p>
+                    <p class="text-muted">Subscribe newsletter to get offers and about new places to discover.</p>
+                    <div class="input-group mb-3">
+                        <input aria-describedby="button-addon2" aria-label="Recipient's username" class="form-control"
+                               placeholder="Your Email Address" type="email">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-primary" id="button-addon2" type="button"><i
+                                    class="fas fa-paper-plane"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row bg-dark text-white">
+            <div class="col-md-6">
+                <p class="text-muted">&copy 2020 Design by PleasantTour Teams All Rights Reserved</p>
+            </div>
+            <div class="col-md-6 float-right text-right">
+                <i class="fab fa-cc-visa"></i>
+                <i class="fab fa-cc-amex"></i>
+                <i class="fab fa-cc-mastercard"></i>
+                <i class="fab fa-cc-discover"></i>
+            </div>
+        </div>
+    </div>
+    <!--footer end-->
+</div>
+<!--js here-->
+<script src="js/jquery-3.5.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="css/js/all.min.js"></script>
+<script src="js/js01.js"></script>
+</body>
+
+</html>
