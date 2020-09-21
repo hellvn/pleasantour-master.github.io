@@ -5,15 +5,8 @@
     background-color: #f8f9fa;
     background-image: url("../img/bg.png");
 }
-.popular_destination_area, body{
+body{
     background: linear-gradient(145deg, #ffffff 0%, #c9eaff 51%, #ffffff 75%);
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.popular_places_area{
-    background: linear-gradient(45deg, #ffffff 0%, #c9eaff 51%, #ffffff 75%);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
