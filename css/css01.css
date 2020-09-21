@@ -424,3 +424,13 @@
 .card-title{
     font-family: "Nothing You Could Do", cursive;
 }
+.sale-sticky {
+    color: white;
+    background-color: orangered;
+    display: block;
+    text-align: center;
+    width: 100px;
+    position: absolute;
+    top: 10px;
+    border-radius: 10%;
+}
