@@ -63,101 +63,31 @@
         </div>
     </nav>
     <!--            header end-->
-    <!--    bread crumb start-->
-    <nav aria-label="breadcrumb">
-        <ol class="breadcrumb bg-white">
-            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-            <li aria-current="page" class="breadcrumb-item active">Select Dates And Travelers</li>
-        </ol>
-    </nav>
-    <!--    bread crumb end-->
     <!--    body start-->
     <!--    Set Tour Start-->
-    <div class="row">
+    <div class="row mt-2">
         <div class="col-2">
             <p>Check In</p>
-            <input type="date">
+            <input class="mt-1" type="date">
         </div>
         <div class="col-2">
             <p>Check Out</p>
-            <input type="date">
+            <input class="mt-1" type="date">
         </div>
-        <div class="col-2">
-            <label for="validationCustom04">Adults</label>
-            <select class="custom-select" id="" required>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-                <option>6</option>
-                <option>7</option>
-                <option>8</option>
-                <option>9</option>
-                <option>10</option>
-                <option>11</option>
-                <option>12</option>
-                <option>13</option>
-                <option>14</option>
-                <option>15</option>
-                <option>16</option>
-                <option>17</option>
-                <option>18</option>
-                <option>19</option>
-                <option>20</option>
-            </select>
+        <div class="col-2 mt-1">
+            <p>Travelers</p>
+            <div class="dropdown">
+                <button class="btn btn-light dropdown-toggle custom-control-inline" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                   1 Travelers
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Adult</a>
+                    <a class="dropdown-item" href="#">Children</a>
+                    <a class="dropdown-item" href="#">Infant</a>
+                </div>
+            </div>
         </div>
-        <div class="col-2">
-            <label for="validationCustom04">Children</label>
-            <select class="custom-select" id="" required>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-                <option>6</option>
-                <option>7</option>
-                <option>8</option>
-                <option>9</option>
-                <option>10</option>
-                <option>11</option>
-                <option>12</option>
-                <option>13</option>
-                <option>14</option>
-                <option>15</option>
-                <option>16</option>
-                <option>17</option>
-                <option>18</option>
-                <option>19</option>
-                <option>20</option>
-            </select>
-        </div>
-        <div class="col-2">
-            <label for="validationCustom04">Infant</label>
-            <select class="custom-select" id="" required>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-                <option>6</option>
-                <option>7</option>
-                <option>8</option>
-                <option>9</option>
-                <option>10</option>
-                <option>11</option>
-                <option>12</option>
-                <option>13</option>
-                <option>14</option>
-                <option>15</option>
-                <option>16</option>
-                <option>17</option>
-                <option>18</option>
-                <option>19</option>
-                <option>20</option>
-            </select>
-        </div>
-        <div class="col-2">
+        <div class="col-2 mt-2">
             <label for="validationCustom04">Transport</label>
             <select class="custom-select" id="" required>
                 <option>By Car</option>
@@ -170,70 +100,70 @@
     <!--    Set Tour End-->
     <div class="row">
     <!--   Set Lead Traveler start -->
-    <div class="col-8">
-        <div class="row mt-3">
-            <form class="col-6">
-                <h4>Lead Traveler(Adult)</h4>
-                <p>! We need Information of lead traveler to contact and deposit</p>
-                <div class="form-row">
-                    <div class="col">
+    <div class="col-7 border-right">
+        <h4>Lead Traveler</h4>
+        <p> <span class="badge badge-danger">Important!</span> We need Information of lead traveler to contact and deposit</p>
+        <div class="row mt-3 ">
+            <form class="col form-row">
+                    <div class="col-6">
                         <h6>First Name</h6>
                         <input type="text" class="form-control" placeholder="John ">
                     </div>
-                    <div class="col">
+                    <div class="col-6">
                         <h6>Last Name</h6>
                         <input type="text" class="form-control" placeholder="M. Doe">
                     </div>
-                    <div class="col-2">
-                        <h6>Age</h6>
-                        <input type="text" class="form-control" placeholder="age">
-                    </div>
-                </div>
             </form>
         </div>
         <div class="row mt-3">
-            <form class="col-6">
-                <div class="form-row">
-                    <div class="col">
+            <form class="col form-row">
+                    <div class="col-6">
                         <h6>Email</h6>
                         <input type="text" class="form-control" placeholder="john@example.com">
                     </div>
-                </div>
+                    <div class="col-6">
+                        <h6>Phone Number</h6>
+                        <input type="text" class="form-control" placeholder="111-22-333-44-5">
+                    </div>
             </form>
         </div>
         <div class="row mt-3">
-            <form class="col-6">
-                <div class="form-row">
-                    <div class="col">
-                        <h6>Phone Number</h6>
-                        <input type="text" class="form-control" placeholder="123-456-789">
-                    </div>
-                    <div class="col">
+            <form class="col form-row">
+                    <div class="col-12">
                         <h6>Address</h6>
                         <input type="text" class="form-control" placeholder="542 W. 15th Street">
                     </div>
-                </div>
             </form>
         </div>
         <div class="row mt-3">
-            <form class="col-6">
-                <div class="form-row">
-                    <div class="col-6">
+            <form class="col form-row">
+                    <div class="col-5">
                         <h6>Credit Card Number</h6>
                         <input type="text" class="form-control" placeholder="111-222-333-444-555">
                     </div>
+                    <div class="col-2">
+                        <h6>Exp Month</h6>
+                        <input type="text" class="form-control" >
+                    </div>
+                <div class="col-2">
+                    <h6>Exp Year</h6>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="col-2">
+                    <h6>CVV</h6>
+                    <input type="text" class="form-control">
                 </div>
             </form>
         </div>
-        <div class="justify-content-center mt-4">
-        <a class="btn btn-bitbucket " type="submit" href="dalat.html">Send</a>
+        <div class="col-md-12 text-right">
+        <a class="mt-4 btn btn-bitbucket" type="submit" href="payment.html">Book</a>
         </div>
     </div>
     <!--   Set Lead Traveler end -->
-    <div class="col-4 mt-2 border">
-        hahahah
-
-    </div>
+        <div class="row col-5 mt-2 justify-content-center text-center ">
+            <h4>Tour Detail</h4>
+            <p class="text-right">From 200$</p>
+        </div>
     </div>
     <!--    body end-->
     <!--    back to top btn-->
