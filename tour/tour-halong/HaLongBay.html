@@ -50,10 +50,10 @@
                     <a class="nav-link text-uppercase" href="../../international.html">International</a>
                 </li>
                 <li class="nav-item  ml-lg-5 ml-sm-2">
-                    <a class="nav-link text-uppercase" href="../../onsale.html">Sales</a>
+                    <a class="nav-link text-uppercase" href="../../contact.html">Contact</a>
                 </li>
             </ul>
-            <form class="form-inline mt-3 my-lg-0" name="searcher" action="#popular" onsubmit="return searchform()">
+            <form class="form-inline mt-3 my-lg-0" name="searcher" action="#" onsubmit="return searchform()">
                 <div class="input-group mb-3">
                     <input type="text" class="form-control" placeholder="Search" aria-label="Recipient's username" aria-describedby="button-addon2">
                     <div class="input-group-append">
@@ -76,7 +76,7 @@
     <!--    bread crumb end-->
     <!--body start-->
     <h5>About Ha Long Bay</h5>
-    <div class="row">
+    <div class="row pb-5">
         <div class="col-md-8">
             <!--            slider area start-->
             <div class="row justify-content-center">
@@ -386,9 +386,9 @@
     <button class="totop btn btn-outline-primary" id="backtotop" onclick="backtop()"><i class="fa-2x fas fa-arrow-circle-up"></i></button>
     <!--    back to top btn end-->
     <!--footer start-->
-    <div class="container-fluid footer mt-5">
+    <div class="container-fluid footer">
         <div class="container pt-5">
-            <div class="row">
+            <div class="row justify-content-center">
                 <div class="col-md-4">
                     <p class="text-uppercase font-weight-bold">directory</p>
                     <p class="text-muted">Follow us to gets special offers and discounts</p>
@@ -399,23 +399,23 @@
                             class="fa-2x fab fa-pinterest"></i></a>
                     <a class="text-muted pl-2" href="http://youtube.com"><i class="fa-2x fab fa-youtube"></i></a>
                 </div>
-                <div class="col-md-4 font-weight-bold">
+                <div class="col-md-2 font-weight-bold">
                     <p class="text-uppercase">pages</p>
-                    <a href="contact.html"><p class="text-muted">Comparison</p></a>
-                    <a href="contact.html"><p class="text-muted">Our Team</p></a>
-                    <a href="contact.html"><p class="text-muted">Contact</p></a>
+                    <a href="../../domestic.html"><p class="text-muted">Domestic</p></a>
+                    <a href="../../international.html"><p class="text-muted">International</p></a>
+                    <a href="../../teams.html"><p class="text-muted">Our Team</p></a>
+                    <a href="../../contact.html"><p class="text-muted">Contact</p></a>
                 </div>
                 <div class="col-md-4">
                     <p class="text-uppercase font-weight-bold">daily offers & discounts</p>
                     <p class="text-muted">Subscribe newsletter to get offers and about new places to discover.</p>
-                    <div class="input-group mb-3">
+                    <form class="input-group mb-3">
                         <input aria-describedby="button-addon2" aria-label="Recipient's username" class="form-control"
                                placeholder="Your Email Address" type="email">
                         <div class="input-group-append">
-                            <button class="btn btn-outline-primary" id="button-addon2" type="button"><i
-                                    class="fas fa-paper-plane"></i></button>
+                            <button class="btn btn-outline-primary" type="button" onclick="newsletterform()"><i class="fas fa-paper-plane"></i></button>
                         </div>
-                    </div>
+                    </form>
                 </div>
             </div>
         </div>

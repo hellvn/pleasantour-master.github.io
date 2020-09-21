@@ -1,9 +1,8 @@
 
 .footer{
-    /*position: sticky;*/
-    /*top: 100%;*/
     background-color: #f8f9fa;
     background-image: url("../img/bg.png");
+    box-shadow:20px 50px 50px 100px #f8f9fa;
 }
 body{
     background: linear-gradient(145deg, #ffffff 0%, #c9eaff 51%, #ffffff 75%);
