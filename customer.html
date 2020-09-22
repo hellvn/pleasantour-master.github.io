@@ -65,7 +65,7 @@
     <!--            header end-->
     <!--    body start-->
     <!--    Set Tour Start-->
-    <div class="row mt-2">
+    <div class="row mt-2 m-4">
         <div class="col-2">
             <p>Check In</p>
             <input class="mt-1" type="date">
@@ -76,9 +76,9 @@
         </div>
         <div class="col-2 mt-1">
             <p>Travelers</p>
-            <div class="dropdown">
-                <button class="btn btn-light dropdown-toggle custom-control-inline" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                   1 Travelers
+            <div class="dropdown mt-2">
+                <button class="col-9 btn btn-light dropdown-toggle border" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    1 Travelers
                 </button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                     <a class="dropdown-item" href="#">Adult</a>
@@ -88,7 +88,7 @@
             </div>
         </div>
         <div class="col-2 mt-2">
-            <label for="validationCustom04">Transport</label>
+            <label for="">Transport</label>
             <select class="custom-select" id="" required>
                 <option>By Car</option>
                 <option>By Plane</option>
@@ -98,71 +98,153 @@
         </div>
     </div>
     <!--    Set Tour End-->
-    <div class="row">
+    <div class="row m-4">
     <!--   Set Lead Traveler start -->
-    <div class="col-7 border-right">
-        <h4>Lead Traveler</h4>
-        <p> <span class="badge badge-danger">Important!</span> We need Information of lead traveler to contact and deposit</p>
-        <div class="row mt-3 ">
-            <form class="col form-row">
-                    <div class="col-6">
-                        <h6>First Name</h6>
-                        <input type="text" class="form-control" placeholder="John ">
-                    </div>
-                    <div class="col-6">
-                        <h6>Last Name</h6>
-                        <input type="text" class="form-control" placeholder="M. Doe">
-                    </div>
-            </form>
-        </div>
-        <div class="row mt-3">
-            <form class="col form-row">
-                    <div class="col-6">
-                        <h6>Email</h6>
-                        <input type="text" class="form-control" placeholder="john@example.com">
-                    </div>
-                    <div class="col-6">
-                        <h6>Phone Number</h6>
-                        <input type="text" class="form-control" placeholder="111-22-333-44-5">
-                    </div>
-            </form>
-        </div>
-        <div class="row mt-3">
-            <form class="col form-row">
-                    <div class="col-12">
-                        <h6>Address</h6>
-                        <input type="text" class="form-control" placeholder="542 W. 15th Street">
-                    </div>
-            </form>
-        </div>
-        <div class="row mt-3">
-            <form class="col form-row">
-                    <div class="col-5">
-                        <h6>Credit Card Number</h6>
-                        <input type="text" class="form-control" placeholder="111-222-333-444-555">
+        <div class="col-6 border-right">
+            <h4>Lead Traveler</h4>
+            <p> <span class="badge badge-danger">Important!</span> We need Information of lead traveler to contact and deposit.</p>
+            <div class="row mt-3 ">
+                <form class="col form-row">
+                        <div class="col-6">
+                            <h6>First Name</h6>
+                            <input type="text" class="form-control" placeholder="John ">
+                        </div>
+                        <div class="col-6">
+                            <h6>Last Name</h6>
+                            <input type="text" class="form-control" placeholder="M. Doe">
+                        </div>
+                </form>
+            </div>
+            <div class="row mt-3">
+                <form class="col form-row">
+                        <div class="col-6">
+                            <h6>Email</h6>
+                            <input type="text" class="form-control" placeholder="john@example.com">
+                        </div>
+                        <div class="col-6">
+                            <h6>Phone Number</h6>
+                            <input type="text" class="form-control" placeholder="111-22-333-44-5">
+                        </div>
+                </form>
+            </div>
+            <div class="row mt-3">
+                <form class="col form-row">
+                        <div class="col-12">
+                            <h6>Address</h6>
+                            <input type="text" class="form-control" placeholder="542 W. 15th Street">
+                        </div>
+                </form>
+            </div>
+            <div class="row mt-3">
+                <form class="col form-row">
+                        <div class="col-5">
+                            <h6>Credit Card Number</h6>
+                            <input type="text" class="form-control" placeholder="111-222-333-444-555">
+                        </div>
+                        <div class="col-2">
+                            <h6>Exp Month</h6>
+                            <input type="text" class="form-control"  placeholder="11">
+                        </div>
+                    <div class="col-2">
+                        <h6>Exp Year</h6>
+                        <input type="text" class="form-control" placeholder="2025">
                     </div>
                     <div class="col-2">
-                        <h6>Exp Month</h6>
-                        <input type="text" class="form-control" >
+                        <h6>CVV</h6>
+                        <input type="text" class="form-control" placeholder="325">
                     </div>
-                <div class="col-2">
-                    <h6>Exp Year</h6>
-                    <input type="text" class="form-control">
+                </form>
+            </div>
+            <p class="text-muted mt-3 small text-left"><a type="button"  data-toggle="modal" data-target="#Question">Why we need your information <i class="far fa-question-circle"></i></a></p><br>
+            <div class="modal fade text-left" id="Question" data-keyboard="false" tabindex="-1" aria-labelledby="Modal2Label" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Why we need your information </h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p class="text-muted">To make sure your trip is a success, we need your personal information so we can contact and pre-pay a portion of the bill.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-2">
-                    <h6>CVV</h6>
-                    <input type="text" class="form-control">
-                </div>
-            </form>
+            </div>
+
         </div>
-        <div class="col-md-12 text-right">
-        <a class="mt-4 btn btn-bitbucket" type="submit" href="payment.html">Book</a>
-        </div>
-    </div>
     <!--   Set Lead Traveler end -->
-        <div class="row col-5 mt-2 justify-content-center text-center ">
-            <h4>Tour Detail</h4>
-            <p class="text-right">From 200$</p>
+        <div class=" col-6 mt-2 justify-content-center text-center ">
+            <h4 class="col-12">Billing Detail</h4>
+            <div class="row mt-1">
+                <div class="col-6">
+                    <h5>Total Travelers: 10</h5>
+                    <p class="text-left">Adult:</p>
+                    <p class="text-left">Children:</p>
+                    <p class="text-left">Infant:</p>
+                </div>
+                <div class="col-6">
+                    <h5 class="text-right">From 200$</h5>
+                    <p class="text-right">5 &times; 200$ = 1000$</p>
+                    <p class="text-right">4 &times; 100$ = 400$</p>
+                    <p class="text-right">1 &times; 0$ = 0$</p>
+                </div>
+            </div>
+            <div class="col-12 border-top text-center">
+                <h5>Tour Tam Dao Mountain 3 Days 2 Night</h5>
+                <p>You must pay 50% in advance</p>
+                <p>You will have to pay 700 USD</p>
+            </div>
+            <p class="text-muted mt-3 small text-left"><a type="button"  data-toggle="modal" data-target="#Modal2"><i class="fa fa-check"></i> Reserve Now & Pay Later <i class="far fa-question-circle"></i></a></p><br>
+            <p class="text-muted small text-left"><a type="button"  data-toggle="modal" data-target="#Modal3"><i class="fa fa-check"></i> Low Price Guarantee <i class="far fa-question-circle"></i></a></p>
+            <!-- Modal2 -->
+            <div class="modal fade text-left" id="Modal2" data-keyboard="false" tabindex="-1" aria-labelledby="Modal2Label" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Reserve Now & Pay Later</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <small class="text-muted">We’ll reserve your spot today, and you can cancel up to two days before your experience without making a payment. Secure your spot with ease, stay flexible, and never miss out.
+                                <br>How it works:</small>
+                            <ol>
+                                <li> Find your experience <br> <small class="text-muted">Choose the experience you want knowing you can secure your spot without being locked in.</small></li>
+                                <li>Make a reservation <br><small class="text-muted">Reserve now and pay later to secure your spot, commitment-free.</small></li>
+                                <li>Choose when to pay <br><small class="text-muted">Come back to pay once your plans are set, or let auto-pay kick in two days before your experience.</small></li>
+                                <li>Enjoy your experience <br><small class="text-muted">Now you’re all set! Have a great time.</small></li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--                    modal3-->
+            <div class="col-md-12 text-center">
+                <a class="mt-4 btn btn-bitbucket col-6" type="submit" href="payment.html">Purchase</a>
+            </div><div class="modal fade text-left" id="Modal3" tabindex="-1" aria-labelledby="Modal2Label" aria-hidden="true">
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Lowest Price Guaranteed</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <small class="text-muted">We guarantee the lowest price on 200,000+ experiences available to book on our site. If you find the same product cheaper within three days of booking or while you're in your destination, we'll refund the difference.
+                                <br>It's easy to do:</small>
+                            <ol>
+                                <li>Gather your information<br> <small class="text-muted">Assemble your Tripadvisor Experiences Booking Number or Itinerary Reference Number and the proof of the lower price you found.</small></li>
+                                <li>Send it to us<br><small class="text-muted">Email <a href="mailto:pleasanttour@gmail.com"> pleasanttour@gmail.com</a> with the documents, your name, and your home address.</small></li>
+                                <li>We'll review<br><small class="text-muted">We'll examine your materials and get in touch as soon as we can.</small></li>
+                                <li>Receive your refund<br><small class="text-muted">If everything checks out, we'll refund you the difference between the two prices.</small></li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     <!--    body end-->
