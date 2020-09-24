@@ -52,10 +52,12 @@
                     <a class="nav-link text-uppercase" href="contact.html">Contact</a>
                 </li>
             </ul>
-            <form action="search-result.html" class="form-inline mt-3 my-lg-0 pl-sm-5" name="searcher" autocomplete="on">
+            <form action="search-result.html" autocomplete="on" class="form-inline mt-3 my-lg-0 pl-sm-5"
+                  name="searcher">
                 <div class="input-group mb-3">
-                    <input aria-describedby="button-addon2" aria-label="Search through site content" class="form-control" placeholder="Search"
-                           type="search" required>
+                    <input aria-describedby="button-addon2" aria-label="Search through site content"
+                           class="form-control" placeholder="Search"
+                           required type="search">
                     <div class="input-group-append">
                         <button class="btn btn-outline-primary" id="button-addon2" type="submit"><i
                                 class="fa fa-search"></i></button>
@@ -300,58 +302,59 @@
             </div>
         </div>
     </div>
-<!--    body end-->
-<!--    back to top btn-->
-<button class="totop btn btn-outline-primary" id="backtotop" onclick="backtop()"><i
-        class="fa-2x fas fa-arrow-circle-up"></i></button>
-<!--    back to top btn end-->
-<!--footer start-->
-<div class="container-fluid footer">
-    <div class="container pt-5">
-        <div class="row justify-content-center">
-            <div class="col-md-4">
-                <p class="text-uppercase font-weight-bold">directory</p>
-                <p class="text-muted">Follow us to gets special offers and discounts</p>
-                <a class="text-muted" href="http://facebook.com"><i class="fa-2x fab fa-facebook"></i></a>
-                <a class="text-muted pl-2" href="http://twiter.com"><i class="fa-2x fab fa-twitter"></i></a>
-                <a class="text-muted pl-2" href="http://instagram.com"><i class="fa-2x fab fa-instagram"></i></a>
-                <a class="text-muted pl-2" href="http://https://www.pinterest.com/"><i
-                        class="fa-2x fab fa-pinterest"></i></a>
-                <a class="text-muted pl-2" href="http://youtube.com"><i class="fa-2x fab fa-youtube"></i></a>
+    <!--    body end-->
+    <!--    back to top btn-->
+    <button class="totop btn btn-outline-primary" id="backtotop" onclick="backtop()"><i
+            class="fa-2x fas fa-arrow-circle-up"></i></button>
+    <!--    back to top btn end-->
+    <!--footer start-->
+    <div class="container-fluid footer">
+        <div class="container pt-5">
+            <div class="row justify-content-center">
+                <div class="col-md-4">
+                    <p class="text-uppercase font-weight-bold">directory</p>
+                    <p class="text-muted">Follow us to gets special offers and discounts</p>
+                    <a class="text-muted" href="http://facebook.com"><i class="fa-2x fab fa-facebook"></i></a>
+                    <a class="text-muted pl-2" href="http://twiter.com"><i class="fa-2x fab fa-twitter"></i></a>
+                    <a class="text-muted pl-2" href="http://instagram.com"><i class="fa-2x fab fa-instagram"></i></a>
+                    <a class="text-muted pl-2" href="http://https://www.pinterest.com/"><i
+                            class="fa-2x fab fa-pinterest"></i></a>
+                    <a class="text-muted pl-2" href="http://youtube.com"><i class="fa-2x fab fa-youtube"></i></a>
+                </div>
+                <div class="col-md-2 font-weight-bold">
+                    <p class="text-uppercase">pages</p>
+                    <a href="domestic.html"><p class="text-muted">Domestic</p></a>
+                    <a href="international.html"><p class="text-muted">International</p></a>
+                    <a href="teams.html"><p class="text-muted">Our Team</p></a>
+                    <a href="contact.html"><p class="text-muted">Contact</p></a>
+                </div>
+                <div class="col-md-4">
+                    <p class="text-uppercase font-weight-bold">daily offers & discounts</p>
+                    <p class="text-muted">Subscribe newsletter to get offers and about new places to discover.</p>
+                    <form autocomplete="on" class="input-group mb-3" onsubmit="newsletterform()">
+                        <input aria-describedby="button-addon2" aria-label="Recipient's username" class="form-control"
+                               placeholder="Your Email Address" required type="email">
+                        <div class="input-group-append">
+                            <button class="btn btn-outline-primary" type="submit"><i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </form>
+                </div>
             </div>
-            <div class="col-md-2 font-weight-bold">
-                <p class="text-uppercase">pages</p>
-                <a href="domestic.html"><p class="text-muted">Domestic</p></a>
-                <a href="international.html"><p class="text-muted">International</p></a>
-                <a href="teams.html"><p class="text-muted">Our Team</p></a>
-                <a href="contact.html"><p class="text-muted">Contact</p></a>
+        </div>
+        <div class="row bg-dark text-white">
+            <div class="col-md-6">
+                <p class="text-muted">&copy 2020 Design by PleasantTour Teams All Rights Reserved</p>
             </div>
-            <div class="col-md-4">
-                <p class="text-uppercase font-weight-bold">daily offers & discounts</p>
-                <p class="text-muted">Subscribe newsletter to get offers and about new places to discover.</p>
-                <form class="input-group mb-3">
-                    <input aria-describedby="button-addon2" aria-label="Recipient's username" class="form-control"
-                           placeholder="Your Email Address" type="email">
-                    <div class="input-group-append">
-                        <button class="btn btn-outline-primary" type="button" onclick="newsletterform()"><i class="fas fa-paper-plane"></i></button>
-                    </div>
-                </form>
+            <div class="col-md-6 float-right text-right">
+                <i class="fab fa-cc-visa"></i>
+                <i class="fab fa-cc-amex"></i>
+                <i class="fab fa-cc-mastercard"></i>
+                <i class="fab fa-cc-discover"></i>
             </div>
         </div>
     </div>
-    <div class="row bg-dark text-white">
-        <div class="col-md-6">
-            <p class="text-muted">&copy 2020 Design by PleasantTour Teams All Rights Reserved</p>
-        </div>
-        <div class="col-md-6 float-right text-right">
-            <i class="fab fa-cc-visa"></i>
-            <i class="fab fa-cc-amex"></i>
-            <i class="fab fa-cc-mastercard"></i>
-            <i class="fab fa-cc-discover"></i>
-        </div>
-    </div>
-</div>
-<!--footer end-->
+    <!--footer end-->
 </div>
 
 <!--js here-->
