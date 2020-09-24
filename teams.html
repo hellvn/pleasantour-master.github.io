@@ -38,8 +38,8 @@
 
         <div class="collapse navbar-collapse" id="topnavbar">
             <ul class="navbar-nav border-left mr-auto pl-md-5 pl-sm-0">
-                <li class="nav-item ml-lg-5 ml-sm-2 active">
-                    <a class="nav-link text-uppercase" href="index.html">Home <span class="sr-only">(current)</span></a>
+                <li class="nav-item ml-lg-5 ml-sm-2">
+                    <a class="nav-link text-uppercase" href="index.html">Home</a>
                 </li>
                 <li class="nav-item  ml-lg-5 ml-sm-2">
                     <a class="nav-link text-uppercase" href="domestic.html">Domestic</a>
@@ -51,12 +51,12 @@
                     <a class="nav-link text-uppercase" href="contact.html">Contact</a>
                 </li>
             </ul>
-            <form action="#" class="form-inline mt-3 my-lg-0 pl-sm-5" name="searcher" onsubmit="return searchform()">
+            <form action="search-result.html" class="form-inline mt-3 my-lg-0 pl-sm-5" name="searcher" autocomplete="on">
                 <div class="input-group mb-3">
-                    <input aria-describedby="button-addon2" aria-label="Recipient's username" class="form-control" placeholder="Search"
-                           type="text">
+                    <input aria-describedby="button-addon2" aria-label="Search through site content" class="form-control" placeholder="Search"
+                           type="search" required>
                     <div class="input-group-append">
-                        <button class="btn btn-outline-primary" id="button-addon2" type="button"><i
+                        <button class="btn btn-outline-primary" id="button-addon2" type="submit"><i
                                 class="fa fa-search"></i></button>
                     </div>
                 </div>

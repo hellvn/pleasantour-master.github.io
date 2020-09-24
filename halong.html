@@ -31,7 +31,7 @@
 <div class="container-fluid" id="container">
     <!--            header start-->
     <nav class="navbar navbar-expand navbar-light bg-light sticky-top">
-        <a class="navbar-brand" href="index.html"><img id="logo" alt="Logo" class="w-100" src="img/logo.png"></a>
+        <a class="navbar-brand" href="index.html"><img alt="Logo" class="w-100" id="logo" src="img/logo.png"></a>
         <button aria-controls="topnavbar" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"
                 data-target="#topnavbar" data-toggle="collapse" type="button">
             <span class="navbar-toggler-icon"></span>
@@ -52,11 +52,13 @@
                     <a class="nav-link text-uppercase" href="contact.html">Contact</a>
                 </li>
             </ul>
-            <form class="form-inline mt-3 my-lg-0" name="searcher" action="#" onsubmit="return searchform()">
+            <form action="search-result.html" class="form-inline mt-3 my-lg-0 pl-sm-5" name="searcher" autocomplete="on">
                 <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="Search" aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <input aria-describedby="button-addon2" aria-label="Search through site content" class="form-control" placeholder="Search"
+                           type="search" required>
                     <div class="input-group-append">
-                        <button class="btn btn-outline-primary" type="button" id="button-addon2"><i class="fa fa-search"></i></button>
+                        <button class="btn btn-outline-primary" id="button-addon2" type="submit"><i
+                                class="fa fa-search"></i></button>
                     </div>
                 </div>
             </form>

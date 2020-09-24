@@ -52,12 +52,12 @@
                     <a class="nav-link text-uppercase" href="contact.html">Contact</a>
                 </li>
             </ul>
-            <form action="#popular-place-area" class="form-inline mt-3 my-lg-0 pl-sm-5" name="searcher" onsubmit="return searchform()">
+            <form action="search-result.html" class="form-inline mt-3 my-lg-0 pl-sm-5" name="searcher" autocomplete="on">
                 <div class="input-group mb-3">
-                    <input aria-describedby="button-addon2" aria-label="Recipient's username" class="form-control" placeholder="Search"
-                           type="text">
+                    <input aria-describedby="button-addon2" aria-label="Search through site content" class="form-control" placeholder="Search"
+                           type="search" required>
                     <div class="input-group-append">
-                        <button class="btn btn-outline-primary" id="button-addon2" type="button"><i
+                        <button class="btn btn-outline-primary" id="button-addon2" type="submit"><i
                                 class="fa fa-search"></i></button>
                     </div>
                 </div>
@@ -649,11 +649,11 @@
                 <div class="col-md-4">
                     <p class="text-uppercase font-weight-bold">daily offers & discounts</p>
                     <p class="text-muted">Subscribe newsletter to get offers and about new places to discover.</p>
-                    <form class="input-group mb-3">
+                    <form class="input-group mb-3" onsubmit="newsletterform()" autocomplete="on">
                         <input aria-describedby="button-addon2" aria-label="Recipient's username" class="form-control"
-                               placeholder="Your Email Address" type="email">
+                               placeholder="Your Email Address" type="email" required>
                         <div class="input-group-append">
-                            <button class="btn btn-outline-primary" type="button" onclick="newsletterform()"><i class="fas fa-paper-plane"></i></button>
+                            <button class="btn btn-outline-primary" type="submit"><i class="fas fa-paper-plane"></i></button>
                         </div>
                     </form>
                 </div>
